@@ -6066,17 +6066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e9673bdb3c8b8242bb1f072856c32f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  rotSpeed: 100
   character: {fileID: 313145335}
-  translation: 0
-  rotation: 0
-  isStood: 0
-  isIdle: 0
-  isCrouched: 0
-  isCrouching: 0
-  isStanding: 1
-  playingSound: 0
   walkingSound: {fileID: 313145340}
   footsteps: {fileID: 306434752}
 --- !u!54 &313145339
@@ -7687,8 +7677,6 @@ MonoBehaviour:
   flap: {fileID: 711730474}
   player1: {fileID: 1883865837}
   flapObject: {fileID: 711730469}
-  isInRange: 0
-  hasCrowbar: 0
   audioSource: {fileID: 1624623304}
   missingCrowbar: {fileID: 8300000, guid: 74da164ad71d04f4f96ff9ee476f30c2, type: 3}
   endAudio: {fileID: 8300000, guid: 9acd21aa8baa1794bab5ac1dcad65ac1, type: 3}
@@ -8826,7 +8814,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.028995708, y: 0.89025307, z: -0.05206464, w: 0.45155084}
+  m_LocalRotation: {x: 0.02899571, y: 0.89025307, z: -0.052064642, w: 0.45155084}
   m_LocalPosition: {x: 0.37874794, y: 4.4710875, z: 97.82286}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -9243,10 +9231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisItem: {fileID: 1009235461}
-  item: {fileID: 0}
   player: {fileID: 1883865837}
   endpoint: {fileID: 711730469}
-  isInRange: 0
   audioSource: {fileID: 1624623304}
   crowBarPickUp: {fileID: 8300000, guid: 9ae07e87046ff86458d8ec46eb7d652b, type: 3}
 --- !u!65 &1009235466
@@ -15095,7 +15081,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111323449}
-  m_LocalRotation: {x: 0.028995708, y: 0.89025307, z: -0.05206464, w: 0.45155084}
+  m_LocalRotation: {x: 0.02899571, y: 0.89025307, z: -0.052064642, w: 0.45155084}
   m_LocalPosition: {x: 0, y: 0, z: 100.58943}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
