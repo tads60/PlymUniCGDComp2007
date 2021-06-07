@@ -5,10 +5,10 @@ using UnityEngine;
 public class ItemScript : MonoBehaviour
 {
     public GameObject thisItem;
-    public Collider item;
+    private Collider item;
     public Collider player;
     public GameObject endpoint;
-    public bool isInRange = false;
+    private bool isInRange = false;
     public AudioSource audioSource;
     public AudioClip crowBarPickUp;
 

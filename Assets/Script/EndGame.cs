@@ -7,11 +7,12 @@ public class EndGame : MonoBehaviour
     public Collider flap;
     public Collider player1;
     public GameObject flapObject;
-    public bool isInRange = false;
-    public bool hasCrowbar = false;
+    private bool isInRange = false;
+    private bool hasCrowbar = false;
     public AudioSource audioSource;
     public AudioClip missingCrowbar;
     public AudioClip endAudio;
+    public GameObject eventSystem;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +25,10 @@ public class EndGame : MonoBehaviour
         if(isInRange && Input.GetButtonDown("Interact"))
         {
             if(hasCrowbar)
-            {
-                //EndgameScript
+            {        
                 audioSource.PlayOneShot(endAudio);
-                flapObject.SetActive(false);
+                eventSystem.SetActive(true);
+                flapObject.SetActive(false);         
             }
             if(!hasCrowbar)
             {

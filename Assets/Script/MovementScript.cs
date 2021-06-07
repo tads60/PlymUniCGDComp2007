@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class MovementScript : MonoBehaviour
 {
-    public float speed = 10.0f;
-    public float rotSpeed = 100.0f;
+    private float speed = 10.0f;
+    private float rotSpeed = 100.0f;
     public GameObject character;
-    public float translation;
-    public float rotation;
-    public bool isStood;
-    public bool isIdle;
-    public bool isCrouched;
-    public bool isCrouching;
-    public bool isStanding;
+    private float translation;
+    private float rotation;
+    private bool isStood;
+    private bool isIdle;
+    private bool isCrouched;
+    private bool isCrouching;
+    private bool isStanding = true;
     Animator anim;
-    public bool playingSound = false;
+    private bool playingSound = false;
     public AudioSource walkingSound;
     public ParticleSystem footsteps;
 
