@@ -90,6 +90,8 @@ public class MovementScript : MonoBehaviour
 
     }
 
+
+
     void playWalkSound()
     {
         if(!isIdle)

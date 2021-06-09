@@ -22,6 +22,5 @@ public class EndGameEvent : MonoBehaviour
     {
         yield return new WaitForSeconds(6.0f);
         SceneManager.LoadScene("DemoEnd");
-        Debug.Log("test");
     }
 }
