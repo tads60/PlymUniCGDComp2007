@@ -9,6 +9,7 @@ public class EndGame : MonoBehaviour
     public GameObject flapObject;
     private bool isInRange = false;
     private bool hasCrowbar = false;
+    private bool hasPlayedAudio = false;
     public AudioSource audioSource;
     public AudioClip missingCrowbar;
     public AudioClip endAudio;
@@ -30,9 +31,10 @@ public class EndGame : MonoBehaviour
                 eventSystem.SetActive(true);
                 flapObject.SetActive(false);         
             }
-            if(!hasCrowbar)
+            if(!hasCrowbar && !hasPlayedAudio)
             {
                 audioSource.PlayOneShot(missingCrowbar);
+                hasPlayedAudio = true;
                 //Tell player they need a crowbar
             }             
             //Destroy object, camera goes into hole, fade to black;
